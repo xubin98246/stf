@@ -16,8 +16,8 @@
     .drop-area(ng-file-drop='installFile($files)', ng-file-drag-over-class='dragover').file-input.btn-file
       input(type='file', ng-file-select='installFile($files)')
 
-      i.fa.fa-2x.fa-download.drop-area-icon
-      .drop-area-text(translate) Drop file to upload
+      i.fa.fa-4x.fa-download.drop-area-icon
+      .drop-area-text(translate) 选择或拖拉应用apk上传安装
 
     .upload-status(ng-if='installation').selectable
       uib-progressbar(max='100', value='installation.progress', ng-if='!installation.settled',

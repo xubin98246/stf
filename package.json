@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/openstf/stf.git"
+    "url": "https://github.com/xubin98246/stf.git"
   },
   "bin": {
     "stf": "./bin/stf"
   },
   "scripts": {
     "test": "gulp test",
-    "prepublish": "bower install && not-in-install && gulp build || in-install"
+    "prepublish": "bower install && gulp build || in-install"
   },
   "dependencies": {
     "adbkit": "^2.4.0",

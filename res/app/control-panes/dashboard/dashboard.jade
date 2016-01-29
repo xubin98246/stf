@@ -1,12 +1,12 @@
 .row
   .col-md-6
-    div(ng-include='"control-panes/dashboard/navigation/navigation.jade"')
+    div(ng-include='"control-panes/dashboard/install/install.jade"')
   .col-md-6
-    div(ng-include='"control-panes/dashboard/clipboard/clipboard.jade"')
+    div(ng-include='"control-panes/dashboard/navigation/navigation.jade"')
 
 .row
   .col-md-6
-    div(ng-include='"control-panes/dashboard/install/install.jade"')
+    div(ng-include='"control-panes/dashboard/clipboard/clipboard.jade"')
   .col-md-6(ng-if='$root.platform == "native"')
     div(ng-include='"control-panes/dashboard/shell/shell.jade"')
 .row
