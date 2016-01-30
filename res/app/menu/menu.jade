@@ -17,8 +17,12 @@
         .btn-group
           button(type='button', ng-model='$root.platform', uib-btn-radio="'web'", translate).btn.btn-sm.btn-default-outline Web
           button(type='button', ng-model='$root.platform', uib-btn-radio="'native'", translate).btn.btn-sm.btn-default-outline Native
+      li(ng-show='!$root.basicMode')
+        a(ng-href='mailto:xubin6@huawei.com')
+          i.fa.fa-fw
+          | {{ "相关问题请咨询xubin或查看帮助文档！ " | translate }}
 
       li(ng-show='!$root.basicMode')
         a(ng-href='/#!/help', accesskey='6')
           i.fa.fa-question-circle.fa-fw
-          | {{ "帮助" | translate }}
+          | {{ "Help" | translate }}
